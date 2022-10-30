@@ -1,0 +1,9 @@
+# ignore compiled files
+*.aux
+*.log
+*.rar
+*.zip
+*.exe
+
+# only these pdf files would be ignored
+*.publish.pdf
