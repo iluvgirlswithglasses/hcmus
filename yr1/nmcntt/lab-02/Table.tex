@@ -1,0 +1,20 @@
+% compiled using xelatex
+% package manager: `tlmgr`
+
+\documentclass[a4paper]{article}
+\usepackage{multirow}
+
+\begin{document}
+  \begin{table}
+    \begin{tabular}{|c|cccccc|l|}
+      \hline
+      \multirow{2}{*}{Họ Tên} & \multicolumn{6}{c|}{Môn học} & \multirow{2}{*}{Ghi Chú} \\
+      \cline{2-7} & Toán & Thể Dục & Hát & Chính Tả & Văn & Tập Đọc & \\
+      \hline
+      Tí  & 1   & 2   & 1   & 2   & 1   & 2   & Đề nghị cho cháu học lại mẫu giáo \\
+      Tèo & 4   & 5   & 4   & 5   & 4   & 6   & Có cố gắng \\
+      Na  & 10  & 9   & 10  & 9   & 10  & 9   & Đề nghị gia đình để cháu tự làm bài! \\
+      \hline
+    \end{tabular}%
+  \end{table}%
+\end{document}
