@@ -30,6 +30,17 @@ Lời đầu tiên em xin được cảm ơn Ths. Phạm Trọng Nghĩa đã gi�
 \listoftables
 \pagebreak
 
+```
+
+
+
+
+
+
+
+
+
+```
 
 ![Overview](res/overview.png)
 
@@ -42,7 +53,7 @@ Lời đầu tiên em xin được cảm ơn Ths. Phạm Trọng Nghĩa đã gi�
 Trong hình bao gồm:
 
 - Mainboard: **Gigabyte B365M-D3H**
-- CPU: **Intel i5-9400F; 4.10GHz; 9M cache** — Chip tiết kiệm điện. Được cắm trên socket LGA 1151.
+- CPU: **Intel i5-9400F** — Chip tiết kiệm điện; 4.10GHz; 9M cache; 6 nhân 12 luồng. Được cắm trên socket LGA 1151.
 - GPU: **VGA Gigabyte GeForce GTX 1650 OC 4G** — Card giá rẻ ở thời điểm được mua. Được cắm vào cổng PCI EX16.
 - RAM: **DDR4 Kingstone HyperX Fury Black 8Gb** — 2 cái được cắm vào 2 khe RAM DDR4 chạy dual channel.
 - SSD: **Transcend 820s 240Gb M2 Sata3** — Được cắm trực tiếp vào cổng M2
@@ -115,5 +126,5 @@ Từ trái sang phải:
 
 ![Peripheral Devices](res/DSC_0671.JPG)
 
-- 2 màn hình DELL P2319H
+- 2 màn hình **DELL P2319H**. Mỗi màn có độ phân giải 1920x1080, tần số quét 60Hz.
 - Một bàn phím, một chuột, một microphone, một bên loa vệ tinh
