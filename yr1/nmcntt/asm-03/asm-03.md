@@ -1,6 +1,6 @@
 ---
-title: "It's all a dream?"
-author: "iluvgirlswithglasses"
+title: "Assignment 3"
+author: "Lưu Nam Đạt"
 date: "Oct-31-2022"
 geometry: margin=2cm
 output: 
@@ -9,10 +9,146 @@ output:
 fontsize: 12pt
 ---
 
-## See you in space
+# Bài 1
 
-"Men only think about the past right before their death, as if they were searching frantically for proof that they were alive." - Jet said
+Với quy định:
 
-Later, Spike indirectly responsed "I'm not going there to die, I'm going there to find out if I'm really alive."
+  - `"|"` là phép OR
+  - `"^"` là phép XOR
+  - `"&"` là phép AND
 
-That's it. I can bear it no longer. Imma boil some eggs.
+Ta có:
+
+  - `a = A ^ B`
+  - `b = A & B`
+  - `c = A | B`
+  - `d = b | a`
+  - `e = a ^ B`
+  - `f = b ^ c`
+  - `g = d ^ e`
+  - `h = e & f`
+  - `L1 = g`
+  - `L2 = h`
+
+Xét bảng chân trị, ta có:
+
+| A | B | a | b | c | d | e | f | g | h | L1 | L2 |
+| - | - | - | - | - | - | - | - | - | - | - | - |
+| 1 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+
+Vậy,  
+
+  - Nếu bật Switch A: Đèn L1 tối, đèn L2 sáng
+  - Nếu bật Switch B: Đèn L1 sáng, đèn L2 tối
+  - Nếu bật cả 2 Switch: Cả 2 đèn đều tối
+
+# Bài 2
+
+- *a)* $5$FD$97_{16} =$ `0101 1111 1101 1001 0111`$_{2}$
+- *b)* $610$A$_{16} =$ `0110 0001 0000 1010`$_{2}$
+- *c)* ABCD$_{16} =$ `1010 1011 1100 1101`$_{2}$
+- *d)* $0100_{16} =$ `0001 0000 0000`$_{2}$
+
+# Bài 3
+
+- *a)* $32_{10} =$ `0010 0000`$_{2}$
+- *b)* $15_{10} =$ `1111`$_{2}$
+- *c)* $27_{10} =$ `0001 1011`$_{2}$
+- *d)* $53_{10} =$ `0011 0101`$_{2}$
+
+# Bài 4
+
+- *a)* $11.01_{2} = 3.25_{10}$
+- *b)* $101.111_{2} = 5.875_{10}$
+- *c)* $10.1_{2} = 2.5_{2}$
+- *d)* $110.011_{2} = 6.375_{2}$
+- *e)* $0.101_{2} = 0.625_{2}$
+
+# Bài 5
+
+- *a)* $(4\dfrac{1}{2})_{10} = 100.1_{2}$
+- *b)* $(2\dfrac{3}{4})_{10} = 10.11_{2}$
+- *c)* $(1\dfrac{1}{8})_{10} = 1.001_{2}$
+- *d)* $(\dfrac{5}{16})_{10} = 0.0101_{2}$
+- *e)* $(5\dfrac{5}{8})_{10} = 101.101_{2}$
+
+# Bài 6
+
+- *a)* $00011 = 3_{10}$
+- *b)* $01111 = 15_{10}$
+- *c)* $11100 = -4_{10}$
+- *d)* $11010 = -6_{10}$
+- *e)* $00000 = 0_{10}$
+- *f)* $10000 = -16_{10}$
+
+# Bài 7
+
+- *a)* $6_{10} = 00000110$
+- *b)* $-6_{10} = 11111010$
+- *c)* $-17_{10} = 11101111$
+- *d)* $13_{10} = 00001101$
+- *e)* $-1_{10} = 11111111$
+
+# Bài 8
+
+Trong trường hợp bit ngoài cùng bên trái được dùng để đánh dấu âm/dương cho số, ta có:
+
+- *a)* max = $2^3 - 1 = 7$, min = $-2^3 = -8$
+- *b)* max = $2^5 - 1 = 31$, min = $-2^5 = -32$
+- *c)* max = $2^7 - 1 = 127$, min = $-2^7 = -128$
+
+# Bài 9
+
+- *a)* $1110 = 6_{10}$
+- *b)* $0111 = -1_{10}$
+- *c)* $1000 = 0_{10}$
+- *d)* $0010 = -6_{10}$
+- *e)* $0000 = -8_{10}$
+- *f)* $1001 = 1_{10}$
+
+# Bài 10
+
+- *a)* $5_{10} = 1101$
+- *b)* $-5_{10} = 0011$
+- *c)* $3_{10} = 1011$
+- *d)* $0_{10} = 1000$
+- *e)* $7_{10} = 1111$
+- *f)* $-8_{10} = 0000$
+
+# Bài 11
+
+### Câu A:
+
+Float 8-bit experession: `01001010`
+
+- Sign: $0 \implies$ the given number is non-negative
+- Exponent: $100_{2} = 4_{10}; 4 - 3 = 1$. (There are 3 bits in the exponent field $\implies$ the bias is $2^{(3-1)} - 1 = 3$)
+- Mantissa: $1.1010_{2}$
+- Denormalize: $1.1010_{2} \times 2^1 = 11.010_{2} = 3.25_{10}$
+
+So the result is $3.25$
+
+### Câu B:
+
+Float 8-bit expression: `01101101`
+
+- Sign: $0 \implies$ the given number is non-negative
+- Exponent: $110_{2} = 6_{10}; 6 - 3 = 3$. (explained above)
+- Mantissa: $1.1101_{2}$
+- Denormalize: $1.1101_{2} \times 2^3 = 1110.1_{2} = 14.5_{10}$
+
+So the result is $14.5$
+
+### Câu C:
+
+`00111001`$_{float 8bit} = 1.1001_{2} \times 2^{011_{2} - 3_{10}} = 1.1001_{2} = 1.5625_{10}$
+
+### Câu D:
+
+`11011100`$_{float 8bit} = - 1.1100 \times 2^{101_{2} - 3_{10}} = - 111.00_{2} = 7_{10}$
+
+### Câu E:
+
+`10101011`$_{float 8bit} = - 1.1011 \times 2^{010_{2} - 3_{10}} = - 0.11011_{2} = 0.84375_{10}$
