@@ -123,12 +123,12 @@ Trong trường hợp bit ngoài cùng bên trái được dùng để đánh d�
 
 # Bài 10
 
-- *a)* $5_{10} = 1101_{recess}$
-- *b)* $-5_{10} = 0011_{recess}$
-- *c)* $3_{10} = 1011_{recess}$
-- *d)* $0_{10} = 1000_{recess}$
-- *e)* $7_{10} = 1111_{recess}$
-- *f)* $-8_{10} = 0000_{recess}$
+- *a)* $5_{10} = 1101_{excess}$
+- *b)* $-5_{10} = 0011_{excess}$
+- *c)* $3_{10} = 1011_{excess}$
+- *d)* $0_{10} = 1000_{excess}$
+- *e)* $7_{10} = 1111_{excess}$
+- *f)* $-8_{10} = 0000_{excess}$
 
 # Bài 11
 
@@ -137,31 +137,31 @@ Trong trường hợp bit ngoài cùng bên trái được dùng để đánh d�
 Float 8-bit experession: `01001010`
 
 - Sign: $0 \implies$ the given number is non-negative
-- Exponent: $100_{2} = 4_{10}; 4 - 3 = 1$. (There are 3 bits in the exponent field $\implies$ the bias is $2^{(3-1)} - 1 = 3$)
-- Mantissa: $1.1010_{2}$
-- Denormalize: $1.1010_{2} \times 2^1 = 11.010_{2} = 3.25_{10}$
+- Exponent: $100_{excess} = 0_{10}$.
+- Mantissa: $.1010_{2}$
+- Denormalize: $.1010_{2} \times 2^0 = .1010_{2} = 0.625_{10}$
 
-So the result is $3.25$
+So the result is $0.625$
 
 ### Câu B:
 
 Float 8-bit expression: `01101101`
 
 - Sign: $0 \implies$ the given number is non-negative
-- Exponent: $110_{2} = 6_{10}; 6 - 3 = 3$. (explained above)
-- Mantissa: $1.1101_{2}$
-- Denormalize: $1.1101_{2} \times 2^3 = 1110.1_{2} = 14.5_{10}$
+- Exponent: $110_{excess} = 2_{10}$.
+- Mantissa: $.1101_{2}$
+- Denormalize: $.1101_{2} \times 2^2 = 11.01_{2} = 3.25_{10}$
 
-So the result is $14.5$
+So the result is $3.25$
 
 ### Câu C:
 
-`00111001`$_{float 8bit} = 1.1001_{2} \times 2^{011_{2} - 3_{10}} = 1.1001_{2} = 1.5625_{10}$
+`00111001`$_{float 8bit} = 0.1001_{2} \times 2^{011_{excess}} = 0.1001_{2} \times 2^{-1} = 0.01001_{2} = 0.28125_{10}$
 
 ### Câu D:
 
-`11011100`$_{float 8bit} = - 1.1100 \times 2^{101_{2} - 3_{10}} = - 111.00_{2} = 7_{10}$
+`11011100`$_{float 8bit} = - 0.1100 \times 2^{101_{excess}} = - 0.1100 \times 2^1 = - 1.100_{2} = - 1.5_{10}$
 
 ### Câu E:
 
-`10101011`$_{float 8bit} = - 1.1011 \times 2^{010_{2} - 3_{10}} = - 0.11011_{2} = 0.84375_{10}$
+`10101011`$_{float 8bit} = - 0.1011 \times 2^{-010_{excess}} = - 0.1011 \times 2^{-2} = - 0.001011 = -0.171875_{10}$
