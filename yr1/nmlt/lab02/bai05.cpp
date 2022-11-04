@@ -46,7 +46,7 @@ int main() {
 		}
 		cout << " days in the required month\n";
 	} else {
-		cout << "and the month input-ed is invalid\n";
+		cout << "and the given month is invalid\n";
 	}
 	return 0;
 }
