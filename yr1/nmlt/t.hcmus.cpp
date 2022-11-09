@@ -23,14 +23,14 @@ int main() {
 		"And the second is `Y`, which indicates xyz.\n" \
 		"Please type in the required arguments.\n";
 
-    /** @ var */
+	/** @ var */
 	// const double PI = cos(0) * 2;
 
 	/** @ inp */
-    
+	
 	/** @ cal */
 
-    /** @ out */
-    
+	/** @ out */
+	
 	return 0;
 }
