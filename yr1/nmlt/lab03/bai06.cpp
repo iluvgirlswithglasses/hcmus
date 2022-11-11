@@ -44,11 +44,12 @@ int main() {
 	/** @ cal */
 	gcd = calc_gcd(a, b);
 	lcm = (a*b)/gcd;
+	double y = (double) gcd / b;
 
 	/** @ out */
 	cout << "gcd(a, b) = " << gcd << "\n";
 	cout << "lcm(a, b) = " << lcm << "\n";
-	cout << "gcd(a, b) = " << a << "*0" << " + " << b << "*" << lcm/b << "\n";
+	cout << "gcd(a, b) = " << a << "*0" << " + " << b << "*" << y << "\n";
 ;	
 	return 0;
 }
