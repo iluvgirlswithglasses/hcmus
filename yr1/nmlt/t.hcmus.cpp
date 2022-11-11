@@ -25,6 +25,7 @@ int main() {
 
 	/** @ var */
 	// const double PI = cos(0) * 2;
+	// const double EPS = 1e-6;
 
 	/** @ inp */
 	
