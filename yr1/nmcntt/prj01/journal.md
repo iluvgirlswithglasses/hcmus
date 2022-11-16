@@ -41,21 +41,33 @@ Cơ bản thì cứ copy paste từ trang skyline345, vì đa số thành viên 
 
 Đảm nhiệm việc làm game. Hôm nay lần đầu làm quen với Godot.
 
+Repository được mở ở: [github.com/iluvgirlswithglasses/EasternOdyssey](github.com/iluvgirlswithglasses/EasternOdyssey)
+
 Về tính năng, hôm nay cài được những tính năng sau:
 
 1. Cơ chế di chuyển
 2. Cơ chế bắn súng
 3. Cơ chế Spawn quái ngẫu nhiên
 4. Cơ chế Spawn quái theo đội hình (được biểu diễn bằng phương trình đường hay vector lực tuyến tính)
-5. Cơ chế máu 
-6. Cơ chế phase & stage
+5. Cơ chế chỉ số, bao gồm những chỉ số cơ bản như máu/sát thương, chỉ số số liệu như kills count,... và nhiều loại chỉ số khác được lưu trữ trong một Manager (thuộc vấn đề kỹ thuật)
+6. Cơ chế Phase & Stage
 7. Cơ chế tháo lắp súng, gồm đa dạng các loại súng
 8. Cơ chế đường đạn bay: Đạn bay bằng phương trình đường hay vector lực tuyến tính
 
 Về kỹ thuật, codebase của Eastern Odyssey có những đặc trưng sau:
 
-1. 
+1. Hướng đối tượng nghiêm ngặt. Có tính Generalized cao --> Dễ dàng thêm/sửa/xóa các tính năng trong game. Dễ dàng sửa chữa và phát triển.
+2. Hierarchy được chuẩn hóa.
 
 ## Thứ Tư, Ngày 16 Tháng 11 Năm 2022
 
+Về kỹ thuật: 
 
+1. Nhiều cải tiến được áp dụng lên codebase sẵn có.
+2. Hoàn thiện Character & Enemy & Environment Logic
+3. Hoàn thiện Collision & Interaction Logic
+
+Về tính năng: 
+
+1. Hoàn thành phát triển bộ công cụ Character/Enemy Design
+2. Đã hoàn phát triển bộ công cụ Level Design.
