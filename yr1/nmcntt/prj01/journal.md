@@ -30,3 +30,21 @@ Lắp mấy cái văn chương của mình vô để test các tính năng liên
 ## Thứ Sáu, Ngày 4 Tháng 11 Năm 2022
 
 Trong buổi họp nhóm hôm nay, website Flaming Watermelon lần đầu tiên được trình diện. Không phải sửa gì cả.
+
+## Thứ Hai, Ngày 14 Tháng 11 Năm 2022
+
+Đăng thông tin thành viên và biên bản lên web flamingwatermelon22
+
+Cơ bản thì cứ copy paste từ trang skyline345, vì đa số thành viên nhóm này là thành viên của nhóm skyline.
+
+## Thứ Ba, Ngày 15 Tháng 11 Năm 2022
+
+Đảm nhiệm việc làm game. Hôm nay lần đầu làm quen với Godot.
+
+Về kỹ thuật, hôm nay cài được những tính năng sau:
+
+Về khái niệm, codebase của Eastern Odyssey có những đặc trưng sau:
+
+## Thứ Tư, Ngày 16 Tháng 11 Năm 2022
+
+
