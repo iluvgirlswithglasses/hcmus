@@ -1,6 +1,6 @@
 ---
-title: "It's all a dream?"
-author: "iluvgirlswithglasses"
+title: "DevLog"
+author: "Lưu Nam Đạt"
 date: "22027062"
 geometry: margin=2cm
 output: 
