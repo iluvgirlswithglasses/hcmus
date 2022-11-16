@@ -41,9 +41,20 @@ Cơ bản thì cứ copy paste từ trang skyline345, vì đa số thành viên 
 
 Đảm nhiệm việc làm game. Hôm nay lần đầu làm quen với Godot.
 
-Về kỹ thuật, hôm nay cài được những tính năng sau:
+Về tính năng, hôm nay cài được những tính năng sau:
 
-Về khái niệm, codebase của Eastern Odyssey có những đặc trưng sau:
+1. Cơ chế di chuyển
+2. Cơ chế bắn súng
+3. Cơ chế Spawn quái ngẫu nhiên
+4. Cơ chế Spawn quái theo đội hình (được biểu diễn bằng phương trình đường hay vector lực tuyến tính)
+5. Cơ chế máu 
+6. Cơ chế phase & stage
+7. Cơ chế tháo lắp súng, gồm đa dạng các loại súng
+8. Cơ chế đường đạn bay: Đạn bay bằng phương trình đường hay vector lực tuyến tính
+
+Về kỹ thuật, codebase của Eastern Odyssey có những đặc trưng sau:
+
+1. 
 
 ## Thứ Tư, Ngày 16 Tháng 11 Năm 2022
 
