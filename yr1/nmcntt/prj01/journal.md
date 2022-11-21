@@ -109,7 +109,7 @@ Today commits include:
 - Stage 2 (the old Stage 1) difficulty heighten
 - Gun Fix
 - New Enemy added: LightFairy - The one that shoots 3 bullets in 3 directions.
-- Added music. The tracks used are composed by Team Shanghai Alice (all rights guaranteed), which are:
+- Added music. The used tracks are composed by Team Shanghai Alice (all rights guaranteed), which are:
     - "Scarlet Beyond a Crimson Dream" / (Future) Title Scene Music
     - "The Space Shrine Maiden Appears" / Stage 1 Background Music
     - "Pierrot of the Star-Spangled Banner" / Stage 2 Background Music
