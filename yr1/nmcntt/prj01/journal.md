@@ -39,9 +39,7 @@ Cơ bản thì cứ copy paste từ trang skyline345, vì đa số thành viên 
 
 ## Thứ Ba, Ngày 15 Tháng 11 Năm 2022
 
-Đảm nhiệm việc làm game. Hôm nay lần đầu làm quen với Godot.
-
-Repository được mở ở: [github.com/iluvgirlswithglasses/EasternOdyssey](github.com/iluvgirlswithglasses/EasternOdyssey)
+Đảm nhiệm việc làm game, trao trang web lại cho người khác làm. Hôm nay lần đầu làm quen với Godot.
 
 Về tính năng, hôm nay cài được những tính năng sau:
 
@@ -54,20 +52,111 @@ Về tính năng, hôm nay cài được những tính năng sau:
 7. Cơ chế tháo lắp súng, gồm đa dạng các loại súng
 8. Cơ chế đường đạn bay: Đạn bay bằng phương trình đường hay vector lực tuyến tính
 
-Về kỹ thuật, codebase của Eastern Odyssey có những đặc trưng sau:
-
-1. Hướng đối tượng nghiêm ngặt. Có tính Generalized cao --> Dễ dàng thêm/sửa/xóa các tính năng trong game. Dễ dàng sửa chữa và phát triển.
-2. Hierarchy được chuẩn hóa.
-
 ## Thứ Tư, Ngày 16 Tháng 11 Năm 2022
 
-Về kỹ thuật: 
+Since I wrote all of my commits in English, imma write it down in the same language.
 
-1. Nhiều cải tiến được áp dụng lên codebase sẵn có.
-2. Hoàn thiện Character & Enemy & Environment Logic
-3. Hoàn thiện Collision & Interaction Logic
+I translated them the first day because I need to report them to the leader, that's all.
 
-Về tính năng: 
+Today commits include:
 
-1. Hoàn thành phát triển bộ công cụ Character/Enemy Design
-2. Đã hoàn phát triển bộ công cụ Level Design.
+- Optimization
+- Character & Enemy & Environment logic
+- Character and Enemy design toolbox
+- Level design toolbox
+- Completing Collision system, never to touch that again
+- Phase manager 
+- Wait Time manager
+- Font resources
+- Spiral projectiles
+- Clownpiece boss / Stage 1 boss
+
+## Thứ Năm, Ngày 17 Tháng 11 Năm 2022
+
+Today commits include:
+
+- Adding more features to Clownpiece boss. Consider she's completed
+- Added more enemy types: 
+    - IceFairy - It's actually the first enemy type developed 2 days ago, but I generalized it so it can be inherited by other enemy types in the future
+    - FireFairy - The one that shoots 4 consecutive bullets
+    - WindFairy - The one that shoots 4 bullets in a corn-shape
+- Added MORE level design tools. They are called "spawners" which control how enemies appear on the scenes. Since I want them to appear in nice-looking formation, I believe I need to work on these design tools a lots.
+- Working on Stage 1...
+- Spiral Projectiles (and Spiral Shooting Guns) bugfix
+- level design tools bug fix
+- bullets' logic debug
+
+## Thứ Sáu, Ngày 18 Tháng 11 Năm 2022
+
+Today commits include:
+
+- Created a new WindFairy class. It just the old one with simpler attack mechanism.
+- Added more control objects over the project
+- Added a new enemy design tool.
+- FireFairy upgrade. Its gameplay is unchanged, only the hierarchy which is changed from the old to the new enemy design tool.
+- Added more parameters to IceFairy. It is now having more customizable attack patterns.
+- Spiral Gun's generalization. I can now build a Shotgun based on this.
+- Input Map update - the player is now able to play the game either with arrows or WASD.
+- Player buff. Since my first tester found this game TOO HARD, I decided to buff the player a little bit.
+- Stage 1 design done, entering test phase.
+- Added a scoreboard
+- Added a whole UI logic
+- Added a stage greeting scene based on that UI Logic
+- Added a SHOTGUN!
+- Added a new type of Spiral Gun - The one that shoots bullet to bullet in a clockwise/counter-clockwise pattern.
+- Since my first tester found the game TOO HARD, I decided to move Stage 1 to Stage 2, and create another Stage 1 instead
+- Moon Rabit - (the new) Stage 1 boss created
+- Stage 2 (the old Stage 1) difficulty heighten
+- Gun Fix
+- New Enemy added: LightFairy - The one that shoots 3 bullets in 3 directions.
+- Added music. The tracks used are composed by Team Shanghai Alice (all rights guaranteed), which are:
+    - "Scarlet Beyond a Crimson Dream" / (Future) Title Scene Music
+    - "The Space Shrine Maiden Appears" / Stage 1 Background Music
+    - "Pierrot of the Star-Spangled Banner" / Stage 2 Background Music
+    - "Faraway Voyage of 380,000 Kilometers" / Stage 3 (future) background music
+- Added a score system, which isn't good at all, but statistics look cool anyway.
+
+## Thứ Bảy, Ngày 19 Tháng 11 Năm 2022
+
+- Finally made a Title Scene
+- Make the UI Better: Retry option & Return to Title option.
+- Healthbar completed
+- Added new enemies: Spiral Shooting Spaceship & Shotgun Spaceship (which are named VertexFairy and ShotgunFairy, respectively)
+- Added one more phase to Stage 2, which use the aforementioned enemy classes.
+- Audio player to play those music
+- Game over function
+- Give LightFairy more function
+- Stage 1 design
+- Stage 1 balance
+- Stage 1 FINAL balance
+- Added background to all scenes
+
+## Chủ Nhật, Ngày 20 Tháng 11 Năm 2022
+
+- Hitbox update
+- Clownpiece (Stage 2 boss) nerf
+- Added explosion animation
+- Collectible item system
+- More Balance & Bugfix
+- Spiral Shotgun - A gun that shot multiple shotgun shells in circular directions.
+- Added 2 more enemy classes that use this new shotgun, which are:
+    - PyroButterfly: The gray spaceship that shoots red bullets in circular formation, seen in Stage 3
+    - CryoButterfly: Sharing the same appearance with PyroButterfly, but shoots blue bullets and is strong af.
+- Complete level design for Stage 3, excluding the boss.
+- background music bugfix
+- The new boss - Yuuka - is started to be designed as the boss of Stage 3
+- Clownpiece nerf
+- Slight buffs for Stage 3
+- Yuuka boss completed
+
+## Thứ Hai, Ngày 21 Tháng 11 Năm 2022
+
+- Yuuka nerf
+- quit game function
+- tutorial added on title scene
+- added the "restart stage" hotkey
+- savegame system
+- relax. seriously.
+
+
+
