@@ -123,9 +123,9 @@ Today commits include:
 - Healthbar completed
 - Added new enemies: Spiral Shooting Spaceship & Shotgun Spaceship (which are named VertexFairy and ShotgunFairy, respectively)
 - Added one more phase to Stage 2, which use the aforementioned enemy classes.
-- Audio player to play those music
+- Audio player to play those musics
 - Game over function
-- Give LightFairy more function
+- Give LightFairy more functions
 - Stage 1 design
 - Stage 1 balance
 - Stage 1 FINAL balance
@@ -156,7 +156,7 @@ Today commits include:
 - tutorial added on title scene
 - added the "restart stage" hotkey
 - savegame system
-- relax. seriously.
+- relax. seriously. i need it.
 
 
 
