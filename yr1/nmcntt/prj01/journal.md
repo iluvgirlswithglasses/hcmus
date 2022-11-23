@@ -1,13 +1,21 @@
 ---
-title: "DevLog"
+title: "NHẬT KÝ CÔNG VIỆC"
 author: "Lưu Nam Đạt"
 date: "22027062"
 geometry: margin=2cm
+header-includes:
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[LO,LE]{Nhập Môn Công Nghệ Thông Tin}
+- \fancyhead[RO,RE]{Lưu Nam Đạt}
+- \fancyfoot[CE,CO]{Trang \thepage}
 output: 
   pdf_document: 
     latex_engine: xelatex
 fontsize: 12pt
 ---
+
+\thispagestyle{fancy}
 
 ## Thứ Tư, Ngày 2 Tháng 11 Năm 2022
 
@@ -158,5 +166,13 @@ Today commits include:
 - savegame system
 - relax. seriously. i need it.
 
+## Thứ Ba, Ngày 22 Tháng 11 Năm 2022
 
+- added dialogue system
+- added the story into the game
+- change the player sprite into an appropriate one, the game is now complete
 
+## Thứ Tư, Ngày 23 Tháng 11 Năm 2022
+
+- a deadly bug about physic fixed
+- added gun upgrade
