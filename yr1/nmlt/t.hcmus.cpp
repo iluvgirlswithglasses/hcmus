@@ -14,6 +14,8 @@ tab-width:	4 spaces
 #include <iostream>
 using namespace std;
 
+/** @ utils */
+
 /** @ drivers */
 int main() {
 	// ios_base::sync_with_stdio(false); cin.tie(0);
@@ -24,8 +26,9 @@ int main() {
 		"Please type in the required arguments.\n";
 
 	/** @ var */
-	// const double PI = cos(0) * 2;
+	const int INF = ~0^(1<<31);
 	// const double EPS = 1e-6;
+	// const double PI = cos(0) * 2;
 
 	/** @ inp */
 	
