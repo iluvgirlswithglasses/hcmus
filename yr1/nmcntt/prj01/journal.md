@@ -176,3 +176,9 @@ Today commits include:
 
 - a deadly bug about physic fixed
 - added gun upgrade
+
+## Thứ Sáu, Ngày 25 Tháng 11 Năm 2022
+
+- pause function added
+- pause menu added
+- tutorial update
