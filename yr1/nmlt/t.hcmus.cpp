@@ -23,6 +23,10 @@ using namespace std;
 #define WORD_CNT 1024		// max words in a row
 #define WORD_LEN 1024		// max length of a word
 
+bool is_blank(char c) {
+	return c <= ' ';
+}
+
 int io_strlen(char *str, const int BUF_SIZE) {
 	// unsafe, only use when `cstring` is not allow
 	for (int i = 0; i < BUF_SIZE; i++) {
@@ -31,8 +35,10 @@ int io_strlen(char *str, const int BUF_SIZE) {
 	return 0;
 }
 
-bool is_blank(char c) {
-	return c <= ' ';
+void io_skipblank(char *str, int &i, int len) {
+	// move the cursor out of blank zone
+	while (i < len && is_blank(str[i]))
+		i++;
 }
 
 void io_getline(char row[WORD_CNT][WORD_LEN], int &cnt, istream &cin) {
@@ -48,31 +54,29 @@ void io_getline(char row[WORD_CNT][WORD_LEN], int &cnt, istream &cin) {
 	cin.getline(buf, BUF_SIZE);
 	int len = strlen(buf);	// len of this row
 
-	bool is_reading_char = is_blank(buf[0]);
-	int  cr_len = 0;	// the length of the current reading word
+	int cr_len = 0;			// the length of the currently reading word
+	int i = 0;				// the cursor to the buffer
+	io_skipblank(buf, i, len);
+	if (i < len) cnt++;		// there's at least 1 word in the row
 
-	for (int i = 0; i <= len; i++) {
-		char c = buf[i];
-
-		// if from char to blank
-		if (is_blank(c) && is_reading_char) {
-			// --> close the currently reading word
+	while (i < len) {
+		// if meet a blank char
+		if (is_blank(buf[i])) {
+			// --> declare the end of this word
 			row[cnt-1][cr_len] = '\0';
-			cr_len = 0;
-			is_reading_char = false;
-		}
-
-		// if from blank to char
-		if (!is_blank(c) && !is_reading_char) {
-			// --> detected one more word
-			cnt++;
-			is_reading_char = true;
-		}
-
-		if (is_reading_char) {
-			row[cnt-1][cr_len++] = c;
+			// and move to new word
+			io_skipblank(buf, i, len);
+			if (i < len) {
+				cnt++;
+				cr_len = 0;
+			}
+		} else {
+			row[cnt-1][cr_len++] = buf[i++];
 		}
 	}
+	// the last word might not have been declared as ended
+	if (cnt > 0) 
+		row[cnt-1][cr_len] = '\0';
 }
 
 /** 
