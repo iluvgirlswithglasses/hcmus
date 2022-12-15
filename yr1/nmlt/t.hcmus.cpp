@@ -19,6 +19,7 @@ using namespace std;
  * @ io 
  * 
  * some simple functions that are used in line reading
+ * the following functions do not use any dynamic array
  * */
 #define WORD_CNT 1024		// max words in a row
 #define WORD_LEN 1024		// max length of a word
@@ -28,11 +29,20 @@ bool is_blank(char c) {
 }
 
 int io_strlen(char *str, const int BUF_SIZE) {
-	// unsafe, only use when `cstring` is not allow
+	// unsafe, only use when `cstring` is not allowed
 	for (int i = 0; i < BUF_SIZE; i++) {
 		if (str[i] == '\0') return i;
 	}
 	return 0;
+}
+
+void io_memset(char row[WORD_CNT][WORD_LEN], char c) {
+	// ridiculously slow, only use when `cstring` is not allowed
+	for (int i = 0; i < WORD_CNT; i++) {
+		for (int j = 0; j < WORD_LEN; j++) {
+			row[i][j] = c;
+		}
+	}
 }
 
 void io_skipblank(char *str, int &i, int len) {
@@ -48,7 +58,7 @@ void io_getline(char row[WORD_CNT][WORD_LEN], int &cnt, istream &cin) {
 		`row[i]`: the i-th word in line
 		`cnt`:    the number of words in this line
 	*/
-	static const int BUF_SIZE = 1<<20;	// max length of buffer (2**20)
+	static const int BUF_SIZE = 1<<20;	// max length of buffer (WORD_CNT * WORD_LEN)
 	static char buf[BUF_SIZE];			// buffer of the line
 
 	cin.getline(buf, BUF_SIZE);
