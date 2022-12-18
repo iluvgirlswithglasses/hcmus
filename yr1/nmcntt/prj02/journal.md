@@ -52,7 +52,7 @@ Quay video phiên bản dành cho Noob
 
 ## Ngày 16 Tháng 12 Năm 2022
 
-Nghiên cứu về các ánh xạ chữ viết tay sang plain text. Tạo hình minh họa các bước làm.
+Nghiên cứu về cách ánh xạ chữ viết tay sang plain text. Tạo hình minh họa các bước làm.
 
 ## Ngày 17 Tháng 12 Năm 2022
 
